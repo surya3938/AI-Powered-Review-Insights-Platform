@@ -1,0 +1,151 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: #000000;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  color: #ab36da;
+}
+
+#p1, #p2, #p3 {
+  padding: 4vw 2vw;
+  margin-bottom: 2rem;
+}
+
+#p1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+#p1 h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  padding: 1rem 0;
+  text-align: center;
+}
+
+#s1 {
+  width: 100%;
+  max-width: 800px;
+}
+
+#txt {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  line-height: 1.6;
+}
+
+#txt p {
+  margin-bottom: 1rem;
+}
+
+#p2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#p2 h1 {
+  width: 100%;
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+}
+
+.image-container {
+  flex: 1 1 200px;
+  max-width: 250px;
+  margin: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.image-container:hover {
+  transform: scale(1.05);
+}
+
+.image-container img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#p3 h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#s2 {
+  display: flex;
+  justify-content: center;
+}
+
+#ip {
+  width: 100%;
+  max-width: 600px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#placeName, #placeLoc {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  width: 100%;
+  padding: 0.8rem;
+  margin: 0.5rem 0;
+  border-radius: 10px;
+  border: none;
+  background-color: #2c2c2c;
+  color: #ffffff;
+}
+
+button {
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  font-weight: 700;
+  margin: 1rem 0;
+  border-radius: 10px;
+  padding: 0.8rem 1.5rem;
+  background-color: #1ABC9C;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #16a085;
+}
+
+#output {
+  width: 100%;
+  font-size: clamp(1rem, 2vw, 1.2rem);
+  padding: 1rem;
+  border: 2px dotted #ffffff;
+  border-radius: 10px;
+  margin-top: 1rem;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  #p2 {
+    flex-direction: column;
+  }
+  
+  .image-container {
+    max-width: 200px;
+  }
+}
