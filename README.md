@@ -1,11 +1,11 @@
-# MiniProject
+# AI Powered Review Insights Platform
 
 This project contains a basic static site and a modern React-based frontend using Vite. It incorporates Google's Generative AI, GSAP for animations, and React 18.
 
 ## 🗂 Project Structure
 
 ```
-miniProject/
+AI Powered Review Insights Platform/
 ├── app.js              # Static frontend JS
 ├── index.html          # Static HTML file
 ├── style.css           # Static styling
